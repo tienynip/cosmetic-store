@@ -1,0 +1,61 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER  */
+/* Logo */
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+/* Menu */
+.navbar-nav {
+    align-items: center;
+}
+
+/* Search form */
+.search-bar {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.search-bar input {
+    border: none;
+}
+
+.search-bar input::placeholder{
+    color: gray;
+}
+
+.search-bar input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.search-bar button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.search-bar button i {
+    color: #E86A92;
+}
+
+/* Hotline and icons */
+.header-hotline {
+    display: none;
+    align-items: center;
+}
