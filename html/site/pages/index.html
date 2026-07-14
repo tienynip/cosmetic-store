@@ -13,35 +13,45 @@
 
 <body>
     <!-- HEADER -->
-    <header>
+    <header class="site-header">
         <nav class="navbar navbar-expand-lg sticky-top py-3">
-            <div class="container-fluid">
+            <div class="container justify-content-between">
                 <!-- Logo -->
-                <a class="navbar-brand" href="#"><img src="../images/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                <a class="navbar-brand d-flex align-items-center m-0" href="#"><img src="../images/logo.png"
+                        alt="Luna Beauty"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
                     aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Menu -->
-                <ul class="navbar-nav ms-5 me-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Trang chủ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sản phẩm</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Đổi trả</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Giao hàng</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
-                </ul>
-                <!-- Search -->
-                <form class="search-bar d-flex">
-                    <input class="form-control me-2 bg-transparent shadow-none" type="text" placeholder="Tìm kiếm sản phẩm...">
-                    <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-                <div class="header-hotline d-flex gap-4">
-                    <div class="text-end">
-                        <small class="d-block text-muted">Hotline 24/7</small>
-                        <a href="#" class="text-accent">0932.538.468</a>
+                <div class="collapse navbar-collapse" id="navbarID">
+                    <ul class="navbar-nav ms-0 me-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">TRANG CHỦ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">SẢN PHẨM</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">ĐỔI TRẢ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">GIAO HÀNG</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">LIÊN HỆ</a></li>
+                    </ul>
+                    <!-- Search -->
+                    <div class="header-right d-flex align-items-center gap-4">
+                        <form class="search-bar d-flex align-items-center">
+                            <input class="form-control me-2 bg-transparent shadow-none" type="text"
+                                placeholder="Tìm kiếm sản phẩm...">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                        <div class="header-hotline">
+                            <small class="d-block text-muted">Hotline 24/7</small>
+                            <a href="#" class="text-accent">0932.538.468</a>
+                        </div>
+                        <a href="#" class="icon-btn">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                        <!-- Cart -->
+                        <a href="#" class="icon-btn cart-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="cart-count">6</span>
+                        </a>
                     </div>
-                    <a href="#" class="icon-btn"><i class="fa-regular fa-user"></i></a>
-                    <i class="fa-solid fa-bag-shopping"></i>
                 </div>
             </div>
         </nav>
