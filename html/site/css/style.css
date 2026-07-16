@@ -196,3 +196,41 @@ body{
 .hero-banner .carousel-control-next:hover i{
     color: #fff;
 }
+
+/* Services */
+.services{
+    margin: 40px 0;
+}
+
+.service-item{
+    text-align: center;
+    background: #f4e3e8;
+    border-radius:15px;
+    padding:10px 2px;
+    transition:all .5s ease;
+    height:100%;
+}
+.service-item:hover{
+    transform:translateY(-5px);
+}
+
+.service-item i{
+    font-size: 25px;
+    color: #E86A92;
+    margin-bottom: 10px;
+}
+.service-content h6{
+    font-size: .875em;
+}
+
+.service-content p {
+    font-size: .875em;
+}
+
+
+            /* --primary: #F7B5C8;
+            --secondary: #FFF6F8;
+            --accent: #E86A92;
+            --text-main: #333333;
+            --border-light: #EAEAEA;
+            --bg-white: #FFFFFF; */
