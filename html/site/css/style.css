@@ -259,7 +259,7 @@ body{
 }
 
 .featured-products{
-    margin: 60px 0;
+    margin: 35px 0;
 }
 
 .product-card{
@@ -397,6 +397,11 @@ body{
     color:#fff;
     transform:translateY(-3px);
     box-shadow:0 10px 20px rgba(232,106,146,.3);
+}
+
+/* New arrival */
+.new-arrival{
+    margin: 35px 0;
 }
 
             /* --primary: #F7B5C8;
