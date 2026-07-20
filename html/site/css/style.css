@@ -287,7 +287,8 @@ body{
     width:100%;
     max-width:250px;
     height:250px;
-    object-fit:contain;
+    border-radius: 15px;
+    /* object-fit:contain; */
 }
 
 .product-action{ 
@@ -403,6 +404,142 @@ body{
 .new-arrival{
     margin: 35px 0;
 }
+
+/* Product section */
+.product-section{
+    margin: 35px 0;
+}
+
+/* Footer */
+.site-footer {
+    background-color: rgb(255, 246, 248);
+    margin-top: 30px;
+    padding: 30px 0 30px;
+}
+
+.site-footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-footer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.site-footer p {
+    color: rgb(102, 102, 102);
+}
+
+.site-footer li {
+    margin-bottom: 5px;
+}
+
+.site-footer a {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    transition: all .3s ease;
+}
+
+.site-footer a:hover {
+    color: #E86A92;
+    padding-left: 6px;
+}
+
+.newsletter-form{
+    display:flex;
+    background:#fff;
+    border-radius:50px;
+    padding:6px;
+}
+
+.newsletter-form input{
+    flex:1;
+    border:none;
+    outline:none;
+    padding:7px 10px;
+}
+
+.newsletter-form button{
+    border:none;
+    border-radius:40px;
+    padding:8px 20px;
+    background:black;
+    color:#fff;
+}
+
+.newsletter-form button:hover {
+    background-color: #E86A92;
+    transition: all .3s ease;
+}
+
+.newsletter-form .form-control:focus,
+.newsletter-form .btn:focus{
+    box-shadow: none;
+}
+
+
+/* Mobile */
+@media (max-width: 767.98px) {
+    .navbar-brand img {
+        width: 90px;
+    }
+
+    .navbar-toggler {
+        display: block;
+        border: none;
+        padding: 5px;
+    }
+    
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .header-right {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start !important;
+        width: 100%;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+        gap: 15px !important;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .header-right .icon-btn {
+        justify-content: flex-start;
+    }
+
+    .hero-banner .carousel-item img {
+        height: 220px;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+    }
+    
+    .section-title {
+        margin-bottom: 30px;
+    }
+
+    .service-item {
+        margin-bottom: 15px;
+    }
+
+    .site-footer h4 {
+        margin-top: 25px;
+    }
+    
+    .site-footer .col-lg-4:first-child h4 {
+        margin-top: 0;
+    }
+}
+
 
             /* --primary: #F7B5C8;
             --secondary: #FFF6F8;
