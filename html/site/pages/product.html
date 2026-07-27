@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunaBeauty</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="site-header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarID" aria-controls="navbarID" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Logo -->
+                    <a class="navbar-brand d-flex align-items-center m-0" href="#"><img src="../images/logo.png"
+                            alt="Luna Beauty"></a>
+                </div>
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarID">
+                    <ul class="navbar-nav ms-0 me-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">TRANG CHỦ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">SẢN PHẨM</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">ĐỔI TRẢ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">GIAO HÀNG</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">LIÊN HỆ</a></li>
+                    </ul>
+                    <div class="header-right">
+                        <!-- Search -->
+                        <div class="header-right d-flex align-items-center gap-4">
+                            <form class="search-bar d-flex align-items-center">
+                                <input class="form-control me-2 bg-transparent shadow-none" type="text"
+                                    placeholder="Tìm kiếm sản phẩm...">
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                            <div class="header-hotline">
+                                <small class="d-block text-muted">Hotline 24/7</small>
+                                <a href="#" class="text-accent">0932.538.468</a>
+                            </div>
+                            <a href="#" class="icon-btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                            <!-- Cart -->
+                            <a href="#" class="icon-btn cart-btn" data-bs-toggle="offcanvas"
+                                data-bs-target="#cartOffcanvas">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span class="cart-count">6</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-section">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            Tất cả sản phẩm
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Product Page -->
+        <div class="product-page">
+            <div class="container">
+                <div class="row">
+                    <aside class="col-lg-3">
+                        <!-- Side bar  -->
+                        <div class="sidebar">
+                            <div class="category">
+                                <h5>Danh mục sản phẩm</h5>
+                                <ul>
+                                    <li><a href="#">Tất cả sản phẩm</a></li>
+                                    <li><a href="#">Kem chống nắng</a></li>
+                                    <li><a href="#">Kem dưỡng da</a></li>
+                                    <li><a href="#">Kem trị mụn</a></li>
+                                    <li><a href="#">Sữa rửa mặt</a></li>
+                                    <li><a href="#">Son môi</a></li>
+                                </ul>
+                            </div>
+                            <div class="price-filter">
+                                <h5>Khoảng giá</h5>
+                                <ul>
+                                    <li class="mb-2">
+                                        <label>
+                                            <input type="radio" name="price">
+                                            Dưới 100.000đ
+                                        </label>
+                                    </li>
+                                    <li class="mb-2">
+                                        <label>
+                                            <input type="radio" name="price">
+                                            100.000đ - 200.000đ
+                                        </label>
+                                    </li>
+                                    <li class="mb-2">
+                                        <label>
+                                            <input type="radio" name="price">
+                                            200.000đ - 300.000đ
+                                        </label>
+                                    </li>
+                                    <li class="mb-2">
+                                        <label>
+                                            <input type="radio" name="price">
+                                            300.000đ - 500.000đ
+                                        </label>
+                                    </li>
+                                    <li class="mb-2">
+                                        <label>
+                                            <input type="radio" name="price">
+                                            500.000đ - 1.000.000đ
+                                        </label>
+                                    </li>
+                                    <li class="mb-2">
+                                        <label>
+                                            <input type="radio" name="price">
+                                            Trên 1.000.000đ
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="col-lg-9">
+                        <div class="product-content">
+                            <div class="product-header d-flex justify-content-between align-items-center mb-4">
+                                <h2 class="product-title">
+                                    Tất cả sản phẩm
+                                </h2>
+                                <div class="product-sort d-flex align-items-center">
+                                    <label for="sort-product" class="me-2 mb-0 fw-bold text-nowrap">
+                                        Sắp xếp:
+                                    </label>
+                                    <select id="sort-product" class="form-select">
+                                        <option value="default">Mặc định</option>
+                                        <option value="price-asc">Giá tăng dần</option>
+                                        <option value="price-desc">Giá giảm dần</option>
+                                        <option value="name-asc">Tên A - Z</option>
+                                        <option value="name-desc">Tên Z - A</option>
+                                        <option value="newest">Mới nhất</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row product-list">
+                                <!-- Product Card -->
+                                <div class="row product-list g-2">
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="product-card">
+                                            <div class="product-image">
+                                                <img src="../images/kemchongnang1.png" alt="Kem làm trắng da">
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="action-btn">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                </a>
+                                                <a href="#" class="action-btn">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h5>
+                                                    <a href="#">
+                                                        Sunscreen Pro+ SPF 50+ Broad Spectrum Face & Body (Tuýp
+                                                        50ml)
+                                                    </a>
+                                                </h5>
+                                                <div class="product-price">
+                                                    <span class="old-price">280.000đ</span>
+                                                    <span class="new-price">350.000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="product-card">
+                                            <div class="product-image">
+                                                <img src="../images/kemduongda1.png" alt="Kem làm trắng da">
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="action-btn">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                </a>
+                                                <a href="#" class="action-btn">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h5>
+                                                    <a href="#">
+                                                        Ultra-Hydrating Gel-Cream with Hyaluronic Acid (Hũ 50ml)
+                                                    </a>
+                                                </h5>
+                                                <div class="product-price">
+                                                    <span class="old-price">350.000đ</span>
+                                                    <span class="new-price">450.000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="product-card">
+                                            <div class="product-image">
+                                                <img src="../images/kemtrimun1.png" alt="Kem làm trắng da">
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="action-btn">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                </a>
+                                                <a href="#" class="action-btn">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h5>
+                                                    <a href="#">
+                                                        Clear Skin Acne Gel Maximum Strength 10% Benzoyl
+                                                        Peroxide (Tuýp 15g)
+                                                    </a>
+                                                </h5>
+                                                <div class="product-price">
+                                                    <span class="old-price">150.000đ</span>
+                                                    <span class="new-price">200.000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="product-card">
+                                            <div class="product-image">
+                                                <img src="../images/kemtrithamnam1.png" alt="Kem làm trắng da">
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="action-btn">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                </a>
+                                                <a href="#" class="action-btn">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h5>
+                                                    <a href="#">
+                                                        Target-Fade Clinical Dark Spot Corrector (Tuýp 15ml)
+                                                    </a>
+                                                </h5>
+                                                <div class="product-price">
+                                                    <span class="old-price">250.000đ</span>
+                                                    <span class="new-price">190.000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="product-card">
+                                            <div class="product-image">
+                                                <img src="../images/suaruamat1.png" alt="Kem làm trắng da">
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="action-btn">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                </a>
+                                                <a href="#" class="action-btn">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h5>
+                                                    <a href="#">
+                                                        AQUA LUMIN Daily Gel Cleanser (150ml)
+                                                    </a>
+                                                </h5>
+                                                <div class="product-price">
+                                                    <span class="old-price">200.000đ</span>
+                                                    <span class="new-price">250.000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="product-card">
+                                            <div class="product-image">
+                                                <img src="../images/suatam1.png" alt="Kem làm trắng da">
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="action-btn">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                </a>
+                                                <a href="#" class="action-btn">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h5>
+                                                    <a href="#">
+                                                        AQUA LUMIN Daily Moisturizing Body Wash (500ml)
+                                                    </a>
+                                                </h5>
+                                                <div class="product-price">
+                                                    <span class="old-price">220.000đ</span>
+                                                    <span class="new-price">280.000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <nav class="mt-4 d-flex justify-content-center">
+                                        <ul class="pagination">
+
+                                            <li class="page-item active">
+                                                <a class="page-link" href="#">1</a>
+                                            </li>
+
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">3</a>
+                                            </li>
+
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <h4>Danh mục</h4>
+                    <ul>
+                        <li><a href="#">Kem Chống Nắng</a></li>
+                        <li><a href="#">Kem Dưỡng Da</a></li>
+                        <li><a href="#">Kem Trị Mụn</a></li>
+                        <li><a href="#">Kem Trị Thâm Nám</a></li>
+                        <li><a href="#">Sữa Rửa Mặt</a></li>
+                        <li><a href="#">Sữa Tắm</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h4>Liên kết</h4>
+                    <ul>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Chính sách thanh toán</a></li>
+                        <li><a href="#">Chính sách giao hàng</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4>Liên hệ với chúng tôi</h4>
+                    <p>Văn phòng: Tầng 3A, 36-38 Nguyễn Thị Bưởi, quận Cam, TP. Hồ Chí Minh</p>
+                    <ul>
+                        <li><a href="tel:0123456789">Hotline: 0123 456 789</a></li>
+                        <li><a href="mailto:lunashop@gmail.com">lunashop@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4>Bản tin</h4>
+                    <p>Đăng ký nhận bản tin để cập nhật sớm nhất các sản phẩm mới, ưu đãi hấp dẫn và xu hướng làm đẹp từ
+                        LunaBeauty.</p>
+                    <form action="" method="POST">
+                        <div class="newsletter-form">
+                            <input type="text" class="form-control" placeholder="Nhập email của bạn.." name="email">
+                            <button type="submit" class="btn btn-primary send pull-right">Gửi</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- SHOPPING CART  -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">
+                Giỏ hàng (6)
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="cart-item">
+                <img src="../images/suatam2.png" alt="Kem làm trắng da">
+                <div class="cart-info">
+                    <h5>BOTANIQUE ORAL Nourishing Shea Body Wash (400ml)</h5>
+                    <span>190.000đ</span>
+                </div>
+                <div class="d-flex align-items-center">
+                    <input type="number" class="form-control form-control-sm text-center mx-2" value="1" min="1"
+                        style="width: 55px;">
+                    <button class="btn btn-sm text-danger">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Tổng cộng:</span>
+                    <strong>380.000đ</strong>
+                </div>
+                <a href="#" class="btn checkout-btn">
+                    Thanh Toán Ngay
+                </a>
+                <a href="#" class="btn continue-btn">
+                    Tiếp Tục Mua Sắm
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Login  -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content login-modal">
+                <div class="modal-header border-0">
+                    <h4 class="modal-title w-100 text-center">Đăng nhập</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-input" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control form-input" placeholder="Mật khẩu">
+                        </div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="remember">
+                                <label class="form-check-label" for="remember">
+                                    Ghi nhớ đăng nhập
+                                </label>
+                            </div>
+                            <a href="#" class="forgot-password">
+                                Quên mật khẩu?
+                            </a>
+                        </div>
+                        <button class="btn submit-btn w-100">
+                            Đăng nhập
+                        </button>
+                    </form>
+                    <div class="text-center mt-4">
+                        Chưa có tài khoản?
+                        <a href="#" class="switch-modal" data-bs-dismiss="modal" data-bs-toggle="modal"
+                            data-bs-target="#registerModal">
+                            Đăng ký ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- REGISTER  -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content login-modal">
+                <div class="modal-header border-0">
+                    <h4 class="modal-title w-100 text-center">
+                        Đăng ký
+                    </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-input" placeholder="Họ và tên">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-input" placeholder="Số điện thoại">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-input" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control form-input" placeholder="Mật khẩu">
+                        </div>
+                        <div class="mb-4">
+                            <input type="password" class="form-control form-input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                        <button class="btn submit-btn w-100">
+                            Đăng ký
+                        </button>
+                    </form>
+                    <div class="text-center mt-4">
+                        Đã có tài khoản?
+                        <a href="#" class="switch-modal" data-bs-dismiss="modal" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">
+                            Đăng nhập
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
