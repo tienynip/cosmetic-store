@@ -941,3 +941,21 @@ body{
     height: 100%;
 }
 
+/* CONTACT */
+.contact-submit {
+    background: #E86A92;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+.contact-submit:hover {
+    background: #D85A83;
+    color: #fff;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
